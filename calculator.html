@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="calculator.css">
+</head>
+<body>
+	<div id="calculatorBody">
+		<div class="screen">
+			<div class="padding">
+				<p id="operation"></p>
+				<p id="result"></p>
+			</div>
+		</div>
+		<div class="calcButtons">
+			<span onclick="submitValue(7)">7</span>
+			<span onclick="submitValue(8)">8</span>
+			<span onclick="submitValue(9)">9</span>
+			<span class="operations" onclick="submitValue('^')">^</span>
+			<span class="operations" onclick="submitValue('sqr')">&radic;</span>
+			<span onclick="submitValue(4)">4</span>
+			<span onclick="submitValue(5)">5</span>
+			<span onclick="submitValue(6)">6</span>
+			<span class="operations" onclick="submitValue('/')">/</span>
+			<span class="operations" onclick="submitValue('*')">*</span>
+			<span onclick="submitValue(1)">1</span>
+			<span onclick="submitValue(2)">2</span>
+			<span onclick="submitValue(3)">3</span>
+			<span class="operations" onclick="submitValue('+')">+</span>
+			<span class="operations" onclick="submitValue('-')">-</span>
+			<span onclick="submitValue(0)" style="width:178px">0</span>
+			<span onclick="submitValue('.')">.</span>
+			<span class="operations" onclick="submitValue('%')">%</span>
+			<span class="operations" onclick="deleteFunction('del')">DEL</span>
+			<span onclick="clearScreen()">C</span>
+			<span onclick="submitMemory('m1')">M1</span>
+			<span onclick="submitMemory('m2')">M2</span>
+			<span onclick="submitMemory('m3')">M3</span>
+			<span class="operations" onclick="equal()">=</span>
+		</div>
+	</div>
+
+
+
+
+	<script type="text/javascript" src="calculator.js"></script>
+</body>
+</html>
